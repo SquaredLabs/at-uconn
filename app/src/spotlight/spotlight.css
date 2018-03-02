@@ -1,0 +1,20 @@
+.spotlight {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-container {
+  flex: 1 0 0;
+  /* this flex-basis CANNOT be auto due to a safari rendering bug.
+   * `auto` will just pull the size of the upper container.
+   * set `flex-grow` properly and pray.
+   */
+  background-color: white;
+  border: none;
+}
+
+.chooser-bar {
+  flex: 0 0 90px;
+  background-color: hsl(0, 0%, 97%);
+}

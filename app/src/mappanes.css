@@ -1,0 +1,106 @@
+.background-image-because-browsers-are-dumb {
+  background-image: url("./map.png");
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -99999999;
+  /*
+   * the same effect can be created by using `background-attachment: fixed` on .pane
+   * however, it becomes really janky due to per-frame redraw forced by the overlaid background
+   * it is beyond me why this isn't optimized by the browser already
+   * the other alternative is to add `will-change: transform` on .screen-2
+   * it is less efficient and will drain the user's battery due to GPU rendering
+   */
+}
+
+.screen-1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #0e071a;
+}
+
+.story-bar {
+  flex: 0 0 49px;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  background-image: linear-gradient(91deg, #19294c, #000e2f);
+}
+
+.search-part {
+  flex: 1 0 auto;
+  margin: 25vh 0 auto;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  /* line-height: 69px; */
+}
+
+.search-input {
+  background-image: linear-gradient(94deg, #19294c, #000e2f);
+  border-radius: 100px;
+}
+
+.search-part input[type="text"] {
+  font-size: 0.5em;
+}
+
+.scr-2-vcenter {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.scr-2-bg {
+  background-color: white;
+  filter: opacity(60%);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.scr-2-flex {
+  width: 100%;
+
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "aside main";
+  z-index: 1; /* sorry! */
+}
+
+.screen-2 {
+  margin: 0 auto;
+  height: 100vh;
+  color: #0e071a;
+}
+
+
+.leftside {
+  text-align: right;
+  grid-area: aside;
+}
+
+.rightside {
+  grid-area: main;
+}
+
+.righttext {
+  width: 320px;
+}
+
+.righttext p:first-child {
+  margin-top: 0;
+}
+
+.leftside > h1 {
+  margin: 0;
+}
+.teeny {
+  color: #635f69;
+  font-size: 0.75em;
+
+}
+

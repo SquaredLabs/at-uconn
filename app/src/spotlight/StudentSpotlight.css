@@ -1,0 +1,18 @@
+
+.bg-container {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(12, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 0;
+}
+
+.bg-color {
+  grid-area: 1 / 4 / 13 / 13;
+  background-image: linear-gradient(104deg, #7ee2e4, #70d4d6 53%, #64c7c9);
+}
+
+.pic {
+  grid-area: 2 / 2 / 12 / 6;
+  background-color: aliceblue;
+}

@@ -1,0 +1,1 @@
+CREATE TABLE Articles ( id SERIAL PRIMARY KEY NOT NULL, title text NOT NULL, body text NOT NULL, tags text[], author_id integer references authors(id) NOT NULL, images text[], published timestamp DEFAULT now() );
