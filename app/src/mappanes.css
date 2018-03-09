@@ -1,3 +1,9 @@
+.logo{
+  width: 10em;
+  margin: 1em;
+  position: absolute;
+}
+
 .background-image-because-browsers-are-dumb {
   background-image: url("./map.png");
   width: 100vw;

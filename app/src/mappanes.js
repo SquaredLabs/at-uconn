@@ -3,12 +3,14 @@ import FontAwesome from 'react-fontawesome';
 
 import './mappanes.css';
 import './map.png';
+import logo from './uconn.png'
 
 export default class MapPanes extends Component {
 
   render () {
     return (
       <div className="pane">
+        <img src={logo} alt={"logo"} className="logo"/>  
         <div className="background-image-because-browsers-are-dumb"></div>
         <div className="screen-1">
           <div className="search-part">
