@@ -14,7 +14,7 @@ const byKey = (key, a) => {
 
 export default class Spotlight extends Component {
   componentWillMount () {
-    this.setState(Object.assign({}, this.state, {selected: 0, stories: [{type: "StudentSpotlight", title: "Breakthroughs: One at a Time, Years Ahead of their Time"}]}))
+    this.setState(Object.assign({}, this.state, {selected: 0, stories: [{type: "StudentSpotlight", subject: "Chester Pittman", article: {title: "Breakthroughs: One at a Time, Years Ahead of their Time", author: {} } } ]}))
       /* setImmediate(async () => {
       const stories = await this.getSpotlights()
       this.setState(Object.assign(this.state, {selected: Object.keys(stories)[0], stories}))

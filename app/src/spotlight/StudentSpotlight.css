@@ -1,18 +1,45 @@
 
 .bg-container {
   display: grid;
-  grid-template-columns: repeat(12, auto);
-  grid-template-rows: repeat(12, auto);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
   grid-column-gap: 20px;
   grid-row-gap: 0;
+  color: white;
 }
 
 .bg-color {
-  grid-area: 1 / 4 / 13 / 13;
+  grid-area: 1 / 4 / 2 / 13;
   background-image: linear-gradient(104deg, #7ee2e4, #70d4d6 53%, #64c7c9);
 }
 
 .pic {
-  grid-area: 2 / 2 / 12 / 6;
+  grid-area: 1 / 2 / 2 / 6;
   background-color: aliceblue;
+  margin: 55px 0;
+}
+
+.text-area {
+  margin-top: 120px;
+  grid-area: 1 / 7 / 2 / 12;
+}
+
+.text-area .at-uconn-text {
+  color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+}
+.text-area h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.text-area p {
+  font-size: 1rem;
+}
+
+.subject {
+  grid-area: 1 / 3 / 2 / 13;
+  font-size: 5rem;
+  z-index: 50;
+  margin-top: auto;
+  margin-bottom: 0.16em;
 }
