@@ -2,6 +2,7 @@
   width: 10em;
   margin: 1em;
   position: absolute;
+  cursor: pointer;
 }
 
 .background-image-because-browsers-are-dumb {
@@ -63,8 +64,10 @@
     border-radius: 50px;
     border: none;
     margin-top:12px;
-    margin-left: -1px;
+    margin-left: 0px;
     background-color: rgba(255,255,255,0.3);
+    animation: cubic-bezier(0.4, 0.0, 0.2, 1);
+    
 }
 
 .search-part input[type="button"]:hover{

@@ -6,11 +6,15 @@ import './map.png';
 import logo from './uconn.png'
 
 export default class MapPanes extends Component {
+  constructor() {
+    super();
+    this.state = { name:'Harambe'}
+  }
 
   render () {
     return (
       <div className="pane">
-        <img src={logo} alt={"logo"} className="logo"/>  
+        <a href="https://uconn.edu/"><img src={logo} alt={"logo"} className="logo"/>  </a>
         <div className="background-image-because-browsers-are-dumb"></div>
         <div className="screen-1">
           <div className="search-part">
@@ -19,7 +23,7 @@ export default class MapPanes extends Component {
               <FontAwesome name='search' tag='i' className="search-button" />
               <input type="button" className="search-button"/>
 
-              <input type="text" ></input>
+              <input type="text" placeholder={this.state.name} ></input>
             </span><br /> at UConn</div>
           </div>
           <div className="story-bar">
