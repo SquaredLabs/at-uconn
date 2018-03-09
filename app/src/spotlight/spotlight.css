@@ -2,6 +2,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: hsl(0, 0%, 97%);
 }
 
 .story-container {
@@ -10,11 +11,9 @@
    * `auto` will just pull the size of the upper container.
    * set `flex-grow` properly and pray.
    */
-  background-color: white;
   border: none;
 }
 
 .chooser-bar {
   flex: 0 0 90px;
-  background-color: hsl(0, 0%, 97%);
 }
