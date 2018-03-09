@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import FontAwesome from 'react-fontawesome';
 
 import './mappanes.css';
 import './map.png';
+
 export default class MapPanes extends Component {
 
   render () {
@@ -10,7 +12,13 @@ export default class MapPanes extends Component {
         <div className="background-image-because-browsers-are-dumb"></div>
         <div className="screen-1">
           <div className="search-part">
-            <div>Welcome to <br/><span className="search-input"><input type="button"/><input type="text"/></span><br/> at UConn</div>
+            <div>Welcome to <br /><span className="search-input">
+              
+              <FontAwesome name='search' tag='i' className="search-button" />
+              <input type="button" className="search-button"/>
+
+              <input type="text" ></input>
+            </span><br /> at UConn</div>
           </div>
           <div className="story-bar">
           </div>

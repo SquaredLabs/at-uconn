@@ -11,6 +11,7 @@
 docker-compose up -d
 pushd migrate && ./migrate.sh && popd # this will take a while the first time around.
 docker-compose down && docker-compose up -d
-pushd app && npm start && popd
-pushd cms && npm start && popd
+pushd cms && npm install && npm start && popd
+pushd app && npm install
+npm start && popd
 ```
